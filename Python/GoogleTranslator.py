@@ -186,10 +186,11 @@ class GoogleTrans(object):
                         targetText += item[0]
                 originalText = response[0][0][1]
                 originalLanguageCode = response[2]
-                print("翻译前：{}，翻译前code：{}".format(originalText, originalLanguageCode))
-                print("==============================")
-                print("翻译后：{}, 翻译后code：{}".format(targetText, lang_to))
-                return originalText, originalLanguageCode, targetText, lang_to
+                # print("翻译前：{}，翻译前code：{}".format(originalText, originalLanguageCode))
+                # print("=============================="
+                # print("翻译后：{}, 翻译后code：{}".format(targetText, lang_to))
+                # return originalText, originalLanguageCode, targetText, lang_to
+                return targetText
             except Exception as e:
                 print(e)
                 retry -= 1
